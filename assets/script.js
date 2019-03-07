@@ -21,9 +21,9 @@ var rogue = {
 };
 var wizard = {
     name: "wizard",
-    health: 65,
+    health: 85,
     selected: false,
-    attack: 7,
+    attack: 13,
     NPCattack: 7
 };
 var hero;
