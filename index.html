@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+</head>
+
+<body>
+
+    <!-- header and instructions -->
+    <div class="container">
+        <div class="row">
+            <div id="headText">
+                <h1>The Royal Tournament of Good Art</h1>
+                <h2>Choose your fighter from the options below, then defeat the rest! Once battle is joined, click your
+                    enemy to attack them, and yourself to retreat to seek a new opponent.<br /><br />Fighter: He tries his best<br />Ranger: Their last name is actually McFace<br />Rogue: Had his poison confiscated and is rather miffed<br />Wizard: Comes from 3.5e</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- fighter options and enemy display -->
+    <div class="container">
+        <div class="row">
+            <div id="fighterDiv" class="combatant col-md-2 fighter" value="fighter">
+                <p>Fighter</p>
+                <img src="assets/images/Fighter.png">
+                <div class="fighterHealth col-md-2">
+                    250
+                </div>
+            </div>
+            <div id="rangerDiv" class="combatant col-md-2 ranger" value="ranger">
+                <p>Ranger</p>
+                <img src="assets/images/Ranger.png">
+                <div class="rangerHealth col-md-2">
+                    125
+                </div>
+            </div>
+            <div id="rogueDiv" class="combatant col-md-2 rogue" value="rogue">
+                <p>Rogue</p>
+                <img src="assets/images/Rogue.png">
+                <div class="rogueHealth col-md-2">
+                    100
+                </div>
+            </div>
+            <div id="wizardDiv" class="combatant col-md-2 wizard" value="wizard">
+                <p>Wizard</p>
+                <img src="assets/images/Wizard.png">
+                <div class="wizardHealth col-md-2">
+                    65
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="infoText col-md-8">
+                <h2>Choose your Warrior!</h2>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- selected hero display -->
+    <div class="container choosingHeroContent">
+        <div class="row">
+            <div id="choosingHeroDiv" class="col-md-2">
+
+            </div>
+
+            <div id="confirmButton" class="col-md-10">
+                <button type="button" class="btn btn-secondary confirmButton">Fight!</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="heroHealth col-md-2">
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- combat arena containing hero, enemy, 
+        damage popups, attack button, win popup -->
+
+    <div class="container readiedHeroContent">
+        <div class="row">
+            <div id="readiedHeroDiv" class="col-md-12">
+            </div>
+            <div class="heroHealth col-md-2">
+
+            </div>
+            <div id="damageTaken" class="col-md-2">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <h2>Click your opponent to attack! Click yourself to retreat!</h2>
+            </div>
+        </div>
+        <div class="container readiedEnemyContent">
+            <div class="row">
+                <div id="readiedEnemyDiv" class="col-md-12">
+                </div>
+
+                <div class="enemyHealth col-md-2">
+                </div>
+
+                <div id="enemyDamageTaken" class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+</body>
